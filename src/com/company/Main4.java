@@ -4,8 +4,8 @@ class Main4 {
     Stakan k = new Stakan("Bigger");
     System.out.println("s: " + s.imia);
     System.out.println("k: " + k.imia);
-    System.out.println("Stakan: " + Stakan.material());
-    System.out.println("Stakan: " + Stakan.vysota());
+    System.out.println("Stakan: " + Stakan.material);
+    System.out.println("Stakan: " + Stakan.vysota);
     System.out.println("s: " + s.procentZapolneniia());
     s.nalit(30);
     System.out.println("s: " + s.procentZapolneniia());
@@ -22,18 +22,22 @@ class Main4 {
     s.nalit(45);
     System.out.println("s: " + s.procentZapolneniia());
     s.imia = "ReSuper";
-    System.out.println("s: " + s.imia);
-    System.out.println("k: " + k.imia);
+    System.out.println("s: " + s.imia());
+    System.out.println("k: " + k.imia());
     System.out.println("Obiom Stakana vysotoy 20: " + Stakan.obiom(20));
   }
 }
 
 class Stakan {
    public String imia;
-   private int zapolnenie;
+   private int zapolnenie = 0;
    
    public Stakan(String s) {
        imia = s;
+   }
+   
+   public String imia() {
+       return imia;
    }
    
    public int procentZapolneniia() {
@@ -54,13 +58,8 @@ class Stakan {
        return voda;
    }
    
-   public static String material() {
-       return "Bumaga";
-   }
-   
-   public static int vysota() {
-       return 10;
-   }
+   public static int vysota = 10;
+   public static String material = "Bumaga";
    
    public static int obiom(int v) {
        return v * 20;
