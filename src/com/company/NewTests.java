@@ -15,7 +15,7 @@ public class NewTests {
     @Test
     public void test2() {
         int a = 10;
-        int b = 6;
+        int b = 5;
         int expectedResult = 15;
         Assert.assertEquals("Expected results didn't match.", expectedResult, a + b);
         Assert.assertTrue(expectedResult == (a + b));
