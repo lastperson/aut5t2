@@ -9,7 +9,7 @@ public class Main {
         System.out.println("180/31 is " + e);
         double f = 10.0;
         int g = 20;
-        double j =99.0;
+        double j =99.0; //
         j = f / g;
         System.out.println(j);
         String h = "Our results:\n 10\n  20\n 358";
