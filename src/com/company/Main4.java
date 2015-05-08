@@ -1,4 +1,8 @@
-class Main4 {
+package com.company;
+
+import com.company.Stakan;
+
+public class Main4 {
   public static void main(String[] args) {
     Stakan s = new Stakan("Super");
     Stakan k = new Stakan("Bigger");
@@ -28,40 +32,3 @@ class Main4 {
   }
 }
 
-class Stakan {
-   public String imia;
-   private int zapolnenie = 0;
-   
-   public Stakan(String s) {
-       imia = s;
-   }
-   
-   public String imia() {
-       return imia;
-   }
-   
-   public int procentZapolneniia() {
-       return zapolnenie;
-   }
-   
-   public void nalit(int n) {
-       zapolnenie = zapolnenie + n;
-       if (zapolnenie > 100) {
-           System.out.println(imia + " perepolnen. Lishnee vylilos.");
-           zapolnenie = 100;
-       }
-   }
-   
-   public int vylit() {
-       int voda = zapolnenie;
-       zapolnenie = 0;
-       return voda;
-   }
-   
-   public static int vysota = 10;
-   public static String material = "Bumaga";
-   
-   public static int obiom(int v) {
-       return v * 20;
-   }
-}
