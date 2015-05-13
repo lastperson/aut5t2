@@ -12,7 +12,9 @@ public class TestHelper {
     public static void init() {
         System.setProperty("webdriver.chrome.driver",
                 "/usr/local/bin/chromedriver");
-        driver = new ChromeDriver();
+        ChromeOptions opt = new ChromeOptions();
+        opt.addArguments("--lang=RU");
+        driver = new ChromeDriver(opt);
         driver.manage().window().maximize();
     }
 }
