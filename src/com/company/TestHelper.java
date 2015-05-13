@@ -2,6 +2,7 @@ package com.company;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 /**
  * Created by Oleksii on 4/22/2015.
