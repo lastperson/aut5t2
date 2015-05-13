@@ -14,7 +14,7 @@ public class TestHelper {
         System.setProperty("webdriver.chrome.driver",
                 "/usr/local/bin/chromedriver");
         ChromeOptions opt = new ChromeOptions();
-        opt.addArguments("--lang=RU");
+        opt.addArguments("--lang=ruRU");
         driver = new ChromeDriver(opt);
         driver.manage().window().maximize();
     }
