@@ -27,6 +27,7 @@ public class AngelTitleTest {
     }
     @Before
     public void cleanup() {
+        TestHelper.init();
         GenPassPage.open();
     }
 }
