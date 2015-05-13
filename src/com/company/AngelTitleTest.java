@@ -16,6 +16,7 @@ public class AngelTitleTest {
     @Test
     public void refactoredTest() {
         Assert.assertEquals("Password generator", TestHelper.driver.getTitle());
+        Assert.assertEquals("你好", "asdasd");
     }
     @After
     public void init() {
