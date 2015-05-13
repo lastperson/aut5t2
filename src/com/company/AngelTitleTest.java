@@ -15,7 +15,7 @@ import org.junit.Assert;
 public class AngelTitleTest {
     @Test
     public void refactoredTest() {
-        Assert.assertEquals("Password Generator", TestHelper.driver.getTitle());
+        Assert.assertEquals("Password generator", TestHelper.driver.getTitle());
     }
     @After
     public void init() {
