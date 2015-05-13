@@ -11,7 +11,7 @@ public class TestHelper {
 
     public static void init() {
         System.setProperty("webdriver.chrome.driver",
-                "C:/MyWork/AUT5/chromedriver.exe");
+                "/usr/local/bin/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
