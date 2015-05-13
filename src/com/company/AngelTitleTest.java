@@ -15,11 +15,7 @@ import org.junit.Assert;
 public class AngelTitleTest {
     @Test
     public void refactoredTest() {
-        GenPassPage.setField("Your master password", "12345678");
-        GenPassPage.setField("Site name", "gmail.com");
-        GenPassPage.generate();
-        String pwd = GenPassPage.getField("Generated password");
-        Assert.assertEquals("W3Hdka0clbEI+@1a", pwd);
+        Assert.assertEquals("Password Generator", TestHelper.driver.getTitle());
     }
     @After
     public void init() {
