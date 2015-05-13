@@ -15,8 +15,8 @@ import org.junit.Assert;
 public class AngelTitleTest {
     @Test
     public void refactoredTest() {
-        Assert.assertEquals("Password generator", TestHelper.driver.getTitle());
-        Assert.assertEquals("你好", "asdasd");
+        TestHelper.driver.get("https://translate.google.com");
+        Assert.assertEquals("Переводчик Google", TestHelper.driver.getTitle());
     }
     @After
     public void init() {
@@ -25,6 +25,6 @@ public class AngelTitleTest {
     @Before
     public void cleanup() {
         TestHelper.init();
-        GenPassPage.open();
+        //GenPassPage.open();
     }
 }
